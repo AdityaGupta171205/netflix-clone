@@ -13,12 +13,12 @@ import {
 import { toast } from "react-toastify";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBN6WgloKkhCqSs1GHJwlR8iRZawangbHs",
-    authDomain: "netflix-clone-bf6ad.firebaseapp.com",
-    projectId: "netflix-clone-bf6ad",
-    storageBucket: "netflix-clone-bf6ad.firebasestorage.app",
-    messagingSenderId: "857403267136",
-    appId: "1:857403267136:web:34ab2661a471e735d227a5"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
@@ -50,8 +50,8 @@ const login = async (email, password) => {
     }
 }
 
-const logout = async ()=>{
+const logout = async () => {
     await signOut(auth);
 }
 
-export {auth, db, login, signUp, logout};
+export { auth, db, login, signUp, logout };
