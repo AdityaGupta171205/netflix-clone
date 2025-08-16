@@ -10,7 +10,7 @@ Coming soon...
 
 | Frontend | Build Tool | Styling | API |
 |----------|------------|---------|-----|
-| React    | Vite       | Tailwind CSS / CSS Modules | TMDB (The Movie Database) |
+| React    | Vite       | CSS     | TMDB (The Movie Database) |
 
 ## ✨ Features
 
